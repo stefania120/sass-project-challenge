@@ -1,0 +1,23 @@
+.features {
+    .container {
+        display: flex;
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .big-card {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.big-card {
+    figure {
+        flex: 1;
+    }
+    
+}

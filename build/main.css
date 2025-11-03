@@ -13,6 +13,7 @@ body {
 }
 
 .container {
+  display: flex;
   max-width: 1060px;
   margin: 0 auto;
   padding: 0 15px;
@@ -194,9 +195,68 @@ header nav img {
 }
 .features {
   padding: 120px 0;
-  text-align: center;
 }
 
+.card {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  padding: 24px;
+  margin: 20px;
+}
+.card h2 {
+  margin: 0;
+}
+.card figure {
+  border-radius: 3px;
+  background: linear-gradient(90deg, #15bd90, rgba(21, 189, 144, 0.5));
+  text-align: center;
+  padding: 24px;
+}
+.card figure img {
+  max-width: 70px;
+}
+.card hr {
+  border: 0;
+  border-top: 4px solid #15bd90;
+  margin-left: 0;
+  margin-top: 10px;
+  width: 30px;
+}
+
+.small-card {
+  display: flex;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+  .features .container {
+    display: flex;
+  }
+  .features .container .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .features .container .big-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .big-card figure {
+    flex: 1;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .features .container {
+    margin-bottom: 30px;
+    display: block;
+  }
+}
 #contact-form {
   background-color: #373f6f;
   background-image: url("../../src/images/world.png");

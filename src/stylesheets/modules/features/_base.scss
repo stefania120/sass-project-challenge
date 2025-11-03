@@ -1,1 +1,9 @@
 @import "features-default";
+
+@media only screen and (min-width: map-get($breakpoints, sm)) {
+  @import "features-sm-up";
+}
+
+@media only screen and (max-width: map-get($breakpoints, sm)) {
+  @import "features-sm-down";
+}

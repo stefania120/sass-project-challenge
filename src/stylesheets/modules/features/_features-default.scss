@@ -1,4 +1,40 @@
 .features {
   padding: 120px 0;
-  text-align: center;
+}
+
+.card {
+  background: $white;
+  border-radius: $border-radius-big;
+  box-shadow: $box-shadow-primary;
+  padding: 24px;
+  margin: 20px;
+
+
+  h2{
+    margin:  0;
+  }
+
+  figure {
+    border-radius: $border-radius-small;
+    background: linear-gradient(90deg, $primary-color, rgba(21, 189, 144, 0.5) );
+    text-align: center;
+    padding: 24px;
+    img{
+      max-width: 70px;
+    }
+  }
+
+  hr {
+    @include title-line($primary-color, 30px);
+  }
+}
+
+.small-card {
+  display: flex;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
